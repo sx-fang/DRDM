@@ -5,10 +5,10 @@ Code repository for the paper "Deep random difference method for high-dimensiona
 
 ## Repository summary
 
-The repository is organized into four subfolders corresponding to the numerical experiments in Subsections 4.1–4.5 (as indicated by their names). Each subfolder is self-contained and can be run independently. To reproduce the results for a given subsection, run `runtask.py` within the corresponding subfolder.
+The repository is organized into five subfolders corresponding to the numerical experiments in Subsections 4.1–4.5 (as indicated by their names). Each subfolder is self-contained and can be run independently. To reproduce the results for a given subsection, run `runtask.py` within the corresponding subfolder.
 
 ### Note
-The four subfolders share a similar structure but differ slightly because the codebase evolved iteratively. The suffix `---m[number]` in subfolder names indicates the implementation version, where larger numbers correspond to more recent versions.
+The five subfolders share a similar structure but differ slightly because the codebase evolved iteratively. The suffix `---m[number]` in subfolder names indicates the implementation version, where larger numbers correspond to more recent versions.
 
 If you plan to adapt the code to your own problem, we recommend starting with `Subsection_4.5`, which contains the most up-to-date implementation.
 
