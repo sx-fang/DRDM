@@ -1,6 +1,22 @@
 # DRDM
 
-Code repository for the paper "Deep random difference method for high-dimensional quasilinear parabolic partial differential equations" (arXiv:2506.20308). 
+Code repository for the paper:
+
+> Wei Cai, Shuixin Fang, and Tao Zhou, Deep random difference method for high-dimensional quasilinear parabolic partial differential equations, *Journal of Computational Physics*, 114767, 2026. (arXiv:2506.20308)
+
+### BibTeX citation
+```bibtex
+@article{Cai2026Deep,
+title   = {Deep random difference method for high-dimensional quasilinear parabolic partial differential equations},
+journal = {Journal of Computational Physics},
+pages   = {114767},
+year    = {2026},
+issn    = {0021-9991},
+doi     = {https://doi.org/10.1016/j.jcp.2026.114767},
+url     = {https://www.sciencedirect.com/science/article/pii/S0021999126001178},
+author  = {Wei Cai and Shuixin Fang and Tao Zhou},
+}
+```
 
 
 ## Repository summary
@@ -67,7 +83,7 @@ Here is a brief overview of the main modules in the `Subsection_4.5` subfolder (
 	- Provides curve/point generators used for training and evaluation.
 
 - `ex_*.py`
-	- Example problem classes (e.g., `ExHjb`, `ExQuasi`) that inherit from the base classes in `ex_meta.py`.
+	- Example problem classes that inherit from the base classes in `ex_meta.py`.
 
 ### Neural networks
 
@@ -93,10 +109,10 @@ Here is a brief overview of the main modules in the `Subsection_4.5` subfolder (
 - `loss_martnet.py`
 	- MartNet-family objectives implemented as `LossCollection` subclasses.
 	- Includes:
-		- `DfSocMartNet`: derivative-free MartNet/**deep random difference method** for HJB equations (*the two methods are equivalent!*).
-		- `SocMartNet`: Soc-MartNet for HJB equations.
-		- `QuasiMartNet`: Soc-MartNet for quasi-linear parabolic PDEs.
-		- `DfQuasiMartNet`: derivative-free MartNet/**deep random difference method** for quasi-linear parabolic PDEs (*the two methods are equivalent!*).
+		- `DfSocMartNet`: **Deep Random Difference Method (DRDM)** / derivative-free MartNet for HJB equations *(these two methods are equivalent)*.
+		- `DfQuasiMartNet`: **Deep Random Difference Method (DRDM)** / derivative-free MartNet for quasilinear parabolic PDEs *(these two methods are equivalent)*.
+		- `SocMartNet`: Soc-MartNet for HJB equations (prior work [SIAM J. Sci. Comput., 47 (2025), pp. C795-C819], https://doi.org/10.1137/24M1681033).
+		- `QuasiMartNet`: Soc-MartNet for quasilinear parabolic PDEs (prior work [SIAM J. Sci. Comput., 47 (2025), pp. C795-C819], https://doi.org/10.1137/24M1681033).
 	- In earlier versions, this module was bundled in `martnetdf.py`.
 	
 - `loss_martnet_strf.py`
